@@ -1,0 +1,35 @@
+{
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "java",
+    "javascript",
+    "sql",
+    "html",
+    "C++",
+    "C",
+    "json",
+    "python"
+  ],
+
+  // Java config
+  "java.home": "/home/smurfssmur/coding/exLibs/jdk11",
+  "java.enabled": true,
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-11",
+      "path": "/home/smurfssmur/coding/exLibs/jdk11",
+      "default": true
+    }
+  ],
+
+  // python config
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.formatting.provider": "autopep8",
+
+  //Prettier config
+  "prettier.tabWidth": 2,
+  "prettier.formatterPriority": 1,
+
+  "snippets.ultisnips.directories": ["UltiSnips", "~/.config/nvim/utils/snips"]
+}

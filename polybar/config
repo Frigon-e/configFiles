@@ -1,0 +1,119 @@
+[colors]
+background = #2E3440
+active = #5e81ac
+background-alt = #444
+;foreground = ${xrdb:color7:#222}
+foreground = #D8DEE9
+foreground-alt = #636b93
+primary = #ffb52a
+secondary = #e60053
+alert = #bd2c40
+
+white = #FFFFFF
+black = #000000
+red = #EC7875
+pink = #EC407A
+purple = #BA68C8
+blue = #42A5F5
+cyan = #4DD0E1
+teal = #00B19F
+green = #61C766
+lime = #B9C244
+yellow = #FDD835
+amber = #FBC02D
+orange = #E57C46
+brown = #AC8476
+indigo = #6C77BB
+gray = #9E9E9E
+blue-gray = #6D8895
+
+gpuAccent = #98c379
+cpuAccent = #e06c75
+memoryAccent = #e5c07b
+dateAccent = #61afef
+powerMenuAccent = #e24040
+audioAccent = #c678dd
+favoritesAccent = #56b6c2
+runAccent = #94d95c
+
+buffer = #4c566a
+nord6 = #ECEFF4
+nord7 = #8FBCBB
+nord8 = #88C0D0
+nord9 = #81A1C1
+nord10 = #5E81AC
+urgent = #BF616A
+warning = #D08770
+notify = #EBCB8B
+success = #A3BE8C
+function = #B48EAD
+
+[bar/main]
+monitor = HDMI-0
+#monitor = DP-2
+dpi = 120
+width = 100%
+height = 30px
+offset-x = 0%
+offset-y = 0%
+radius = 0
+fixed-center = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 2
+line-color = #f00
+
+border-size = 0
+border-color = #b94c566a
+
+padding-left = 0
+padding-right = 0
+
+module-margin-left = 1
+module-margin-right = 1
+
+font-0 = fixed:pixelsize= 10;1
+font-1 = unifont:fontformat=truetype:size=10:antialias=false;0
+font-2 = Font Awesome 5 Free Regular:pixelsize=10;2
+font-3 = Font Awesome 5 Free Solid:pixelsize=10;2
+font-4 = Font Awesome 5 Brands Regular:pixelsize=10;2
+font-5 = icomoon:pixelsize=24;8
+font-6 = icomoon-feather:pixelsize=24;8
+font-7 = JetBrainMono Nerd Font Regular:pixelsize=10;2
+;in font-5 the letter "o" is defined as opensuse icon
+
+modules-left = workspaces
+modules-center = title
+modules-right = gpu separator cpu temperature separator memory separator pulseaudio-control separator wlan separator date separator powermenu
+
+override-redirect = false
+
+enable-ipc = true
+
+click-left =
+click-right = nvim ~/.config/polybar/config
+
+tray-position = none
+tray-padding = 2
+tray-offset-x = -20%
+
+
+[section/modules]
+include-file = ~/.config/polybar/modules.ini
+
+[settings]
+screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+pseudo-transparency = false
+
+
+[global/wm]
+margin-top = 0
+margin-bottom = 0
+
+; vim:ft=dosini
